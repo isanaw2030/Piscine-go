@@ -1,17 +1,16 @@
 package main
 
-import "os"
+import "github.com/01-edu/z01"
 
 func main() {
     
    
     for i := 'a'; i <= 'z'; i++ {
        
-        os.Stdout.Write([]byte{byte(i)})
+        z01.PrintRune(i)
     }
 
-  
-    os.Stdout.Write([]byte{'\n'})
+  z01.PrintRune('a')
 }
 
 
